@@ -1,0 +1,76 @@
+<h2>Register/Sign Up</h2>
+<mat-vertical-stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel> Personal Information</ng-template>
+            <div class="form-fields">
+                <mat-form-field>
+                    <mat-label>First Name</mat-label>
+                    <input matInput formControlName="firstName">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Last Name</mat-label>
+                    <input matInput formControlName="lastName">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="Email">
+                </mat-form-field>
+            </div>
+            <div>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Professional Information</ng-template>
+            <div class="form-fields">
+                <mat-form-field>
+                    <mat-label>Role</mat-label>
+                    <input matInput formControlName="role">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Company</mat-label>
+                    <input matInput formControlName="currentCompany">
+                </mat-form-field>
+                <mat-form-field class="city">
+                    <mat-label>City</mat-label>
+                    <input matInput formControlName="city">
+                </mat-form-field>
+                <mat-form-field class="state">
+                    <mat-label>State</mat-label>
+                    <input matInput formControlName="state">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Industry</mat-label>
+                    <input matInput formControlName="industry">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Country</mat-label>
+                    <input matInput formControlName="country">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>LinkedIn</mat-label>
+                    <input matInput formControlName="linkedIn">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Phone Number</mat-label>
+                    <input matInput formControlName="phoneNumber">
+                </mat-form-field>
+            </div>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <p>All done! Please sign in.</p>
+        <div>
+            <button mat-button matStepperPrevious></button>
+            <button mat-button>Sign in</button>
+        </div>
+    </mat-step>
+</mat-vertical-stepper>
