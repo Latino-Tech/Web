@@ -1,0 +1,17 @@
+<h2>Sign in</h2>
+
+<div class="container">
+    <form [formGroup]="signInForm">
+        <div class="sign-in-form-fields">
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password">
+            </mat-form-field>
+        </div>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!signInForm.valid">Sign In</button>
+    </form>
+</div>
