@@ -67,10 +67,10 @@
     </mat-step>
     <mat-step>
         <ng-template matStepLabel>Done</ng-template>
-        <p>All done! Please sign in.</p>
+        <p>You are all done.</p>
         <div>
-            <button mat-button matStepperPrevious></button>
-            <button mat-button>Sign in</button>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button routerLink="/signin">Submit</button>
         </div>
     </mat-step>
 </mat-vertical-stepper>
