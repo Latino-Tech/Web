@@ -6,10 +6,11 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [LandingPageComponent, SignUpComponent, SignInComponent, HeaderComponent],
+  declarations: [LandingPageComponent, SignUpComponent, SignInComponent, HeaderComponent, FooterComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -17,7 +18,7 @@ import { HeaderComponent } from './header/header.component';
     
   ],
   exports: [
-    LandingPageComponent, SignUpComponent, SignInComponent, HeaderComponent
+    LandingPageComponent, SignUpComponent, SignInComponent, HeaderComponent, FooterComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 })
