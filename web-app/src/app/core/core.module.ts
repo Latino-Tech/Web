@@ -3,15 +3,16 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
-  declarations: [LandingPageComponent, SignUpComponent],
+  declarations: [LandingPageComponent, SignUpComponent, SignInComponent],
   imports: [
     CommonModule,
     SharedModule
   ],
   exports: [
-    LandingPageComponent, SignUpComponent
+    LandingPageComponent, SignUpComponent, SignInComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 })
